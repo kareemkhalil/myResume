@@ -1,0 +1,28 @@
+{
+    "MenuHome":"Home",
+    "MenuAbout":"About",
+    "MenuResume":"Resume",
+    "MenuPortfolio":"Portfolio",
+    "MenuContacts":"Contacts",
+    "firstName": "Kareem",
+    "lastName": "Khalil",
+    "iAm": "I am",
+    "title1": "full stack web developer",
+    "title2": "freelancer",
+    "a": "a",
+    "aboutMe":"About Me",
+    "greating":"Hello, I’m Kareem",
+    "aboutDescr":" <strong>Hello, I’m Kareem</strong>, full stack developer based on Egypt.<br /> I have rich experience in web site Developing<br /> and customization. Also I am good at <strong>Angular 6, Nodejs, MongoDb, C#, .net development, html, css, <br /></strong>",
+    "downloadCv": "Download CV",
+    "myService":"<span>My</span> Services</div>",
+    "webDevelopment":"Web Development",
+    "serviceWebDevDisc":"Modern and mobile-ready website that will help of your marketing.",
+    "serviceWebsiteSupportingdisc":"I can support you with your website to maintenance and revamp.",
+    "serviceWebsiteSupporting":"Website Supporting",
+    "funFacts":"<span>Fun</span> Facts",
+    "funFactsProjectsCompleted":"Projects Completed",
+    "funFactsCountriesVisited":"Countries Visited",
+    "funFactsLinesOfCode":"Lines of Code",
+    "funFactsSatisfiedCustomers":"Satisfied Customers"
+
+}

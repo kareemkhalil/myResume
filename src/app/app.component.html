@@ -1,0 +1,726 @@
+<!--
+Container
+-->
+<!-- <link rel="stylesheet" href="src/assets/css/rtl.css" />  -->
+
+<div class="container">
+  <!-- <div class="theme_panel" [ngClass]="translate.currentLang == 'ar' ? 'left':''"> 
+    <div class="toggle_bts">
+      <a class="toggle-theme-panel" href="#">
+        <i class="icon la la-gear"></i>
+      </a>
+    </div>
+    <div class="theme_menu">
+      <h4>Language</h4>
+      <ul class="theme demo_list">
+        <li style="width: 50%;"><a style="cursor: pointer;" (click)="changeLang('ar')"><strong>عربي</strong></a></li>
+        <li style="width: 50%;"><a style="cursor: pointer;" (click)="changeLang('en')"><strong>English</strong></a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div> -->
+  <!--
+  Card - Started
+-->
+  <div class="card-inner card-started active" id="home-card">
+    <!-- Started Background -->
+    <div class="slide" style="background-image: url(assets/images/bg.jpg);"></div>
+
+    <div class="centrize full-width">
+      <div class="vertical-center">
+
+        <!-- Started titles -->
+        <div class="title"><span>{{ 'firstName' | translate }}</span> {{ 'lastName' | translate }}</div>
+        <div class="subtitle">
+          {{ 'iAm' | translate }}
+          <div class="typing-title">
+            <p>a <strong>web developer.</strong></p>
+            <p>a <strong>freelancer.</strong></p>
+          </div>
+          <div class="typing-title2" style="display:none">
+            <p> <strong>مطور ويب.</strong></p>
+            <p> <strong>مستقل.</strong></p>
+          </div>
+          <span class="typed-title"></span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 
+  Card - About
+-->
+  <div class="card-inner" id="about-card">
+    <div class="row card-container">
+
+      <!--
+      Card Wrap
+    -->
+      <div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar>
+
+        <!-- About Image -->
+        <div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6" style="background-image: url(assets/images/profile.jpg);"></div>
+
+        <!--
+        Inner Top
+      -->
+        <div class="content inner-top">
+          <div class="row">
+            <div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12">
+              <div class="title-bg">{{ 'aboutMe' | translate }}</div>
+              <div class="text">
+                <p [innerHTML]="'aboutDescr' | translate"> 
+                </p>
+              </div>
+              <div class="circle-bts">
+                <a href="/assets/files/KareemKhalilResume.pdf" download><span><i class="icon la la-download"></i>{{ 'downloadCv' | translate }}</span></a>
+                <a href="#"><i class="icon la la-skype"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        Services
+      -->
+        <div class="content services">
+          <div class="row">
+            <div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12">
+
+              <!-- title -->
+              <div class="title" [innerHTML]="'myService' | translate"></div>
+
+            </div>
+          </div>
+
+          <!-- service items -->
+          <div class="row service-items">
+
+            <!-- service item -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+              <div class="service-item card-box">
+                <div class="icon"><i class="la la-html5"></i></div>
+                <div class="name">{{ 'webDevelopment' | translate }}</div>
+                <p>
+                  {{ 'serviceWebDevDisc' | translate }}
+                </p>
+              </div>
+            </div>
+
+            <!-- service item -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+              <div class="service-item card-box">
+                <div class="icon"><i class="la la-wrench"></i></div>
+                <div class="name">{{ 'serviceWebsiteSupporting' | translate }}</div>
+                <p>
+                  {{ 'serviceWebsiteSupportingdisc' | translate }}
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--
+        Fun Fact
+      -->
+        <div class="content fuct">
+          <div class="row">
+            <div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12">
+
+              <!-- title -->
+              <div class="title" [innerHTML]="'funFacts' | translate"></div>
+
+            </div>
+          </div>
+
+          <!-- fuct items -->
+          <div class="row fuct-items">
+
+
+
+
+            <!-- fuct item -->
+            <div class="col col-m-6 col-t-6 col-d-3 col-d-lg-3">
+              <div class="fuct-item card-box">
+                <div class="icon"><i class="la la-lightbulb-o"></i></div>
+                <div class="name">10+ {{ 'funFactsProjectsCompleted' | translate }}</div>
+              </div>
+            </div>
+
+            <!-- fuct item -->
+            <div class="col col-m-6 col-t-6 col-d-3 col-d-lg-3">
+              <div class="fuct-item card-box">
+                <div class="icon"><i class="la la-flag-o"></i></div>
+                <div class="name">8+ {{ 'funFactsCountriesVisited' | translate }}</div>
+              </div>
+            </div>
+
+            <!-- fuct item -->
+            <div class="col col-m-6 col-t-6 col-d-3 col-d-lg-3">
+              <div class="fuct-item card-box">
+                <div class="icon"><i class="la la-code"></i></div>
+                <div class="name">100 000 {{ 'funFactsLinesOfCode' | translate }}</div>
+              </div>
+            </div>
+
+            <!-- fuct item -->
+            <div class="col col-m-6 col-t-6 col-d-3 col-d-lg-3">
+              <div class="fuct-item card-box">
+                <div class="icon"><i class="la la-smile-o"></i></div>
+                <div class="name">8+ {{ 'funFactsSatisfiedCustomers' | translate }}</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 
+  Card - Resume
+-->
+  <div class="card-inner" id="resume-card">
+    <div class="row card-container">
+
+      <!--
+      Card Wrap
+    -->
+      <div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar>
+
+        <!-- Resume Image -->
+        <div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6" style="background-image: url(assets/images/profile2.jpg);"></div>
+
+        <!--
+        Inner Top
+      -->
+        <div class="content inner-top">
+          <div class="row">
+            <div class=" col col-m-12 col-t-12 col-d-12 col-d-lg-12">
+              <div class="title-bg">Resume</div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        Resume
+      -->
+        <div class="content resume">
+          <div class="row">
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+
+              <!-- title -->
+              <div class="title"><span>My</span> Experience</div>
+
+              <!-- resume items -->
+              <div class="resume-items card-box">
+
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name">Technical Lead Front-End Developer</div>
+                  <div class="date">2021-Present <span>|</span> Vodafone _VOIS, Egypt</div>
+                  <p>
+                    Lead Technical development team, develop and manage (design/ build) sprints in the Web-Factory, Working Offshoring for Vodafone Germany
+                  </p>
+                </div>
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name">Senior Front-End Developer</div>
+                  <div class="date">2020-2021 <span>|</span> Vodafone _VOIS, Egypt</div>
+                  <p>
+                    Designs, Develop and manage Dev. team in the Vodafone Germany Account (WebFactory).
+                  </p>
+                </div>
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name">Senior Full-Stack Developer</div>
+                  <div class="date">2018-2020 <span>|</span> Link Development.</div>
+                  <p>
+                    Collaborate with creative and development teams on the execution of ideas.
+                  </p>
+                </div>
+
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name">Full Stack Developer</div>
+                  <div class="date">2015-2017 <span>|</span> AFA TEC.</div>
+                  <p>
+                    Worked as full stack developer on ERP system my reasonability’s was Accounting module: .
+                  </p>
+                </div>
+
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name"> Freelance Web Developer</div>
+                  <div class="date">2016-Present <span>|</span> Freelance.</div>
+                  <p>
+                    Developing websites and web applications using latest technology.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+
+              <!-- title -->
+              <div class="title"><span>My</span> Education</div>
+
+              <!-- resume items -->
+              <div class="resume-items card-box">
+
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name">Ain Shams University</div>
+                  <div class="date">2007-2011 <span>|</span> Egypt</div>
+                  <p>
+                    Bachelor's Degree in Accounting, Faculty of Commerc, Cairo
+                  </p>
+                </div>
+
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name">Web Developing Course</div>
+                  <div class="date">June-2016 Oct-2016 <span>|</span> Egypt</div>
+                  <p>
+                    Microsoft ASP.NET MVC 5, HTML, CSS, JavaScript.
+                    Framework and Project.
+                  </p>
+                </div>
+
+                <!-- resume item -->
+                <div class="resume-item">
+                  <div class="name">Front-End Course</div>
+                  <div class="date">2018 <span>|</span> Online - pluralsight.com</div>
+                  <p>
+                    Createing websits and web apps with Angular's components, templates, and services.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        Skills
+      -->
+        <div class="content skills">
+          <div class="row">
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+
+              <!-- title -->
+              <div class="title"><span>Personal</span> Skills</div>
+
+              <!-- skills -->
+              <div class="skills-list card-box">
+                <ul>
+                  <li>
+                    <div class="name">Communication</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:90%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">Team Work</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:65%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">Leadership</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:95%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">Language</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:85%;"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+
+              <!-- title -->
+              <div class="title"><span>Professional</span> Skills</div>
+
+              <!-- skills -->
+              <div class="skills-list card-box">
+                <ul>
+                  <li>
+                    <div class="name">Angular</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:98%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">ReactJs</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:75%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">Node Js</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:90%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">Microsoft Asp.net MVC</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:90%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">MongoDb</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:80%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">SQL Server</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:65%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">HTML / CSS / JS</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:95%;"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="name">Object Oriented Programming</div>
+                    <div class="progress">
+                      <div class="percentage" style="width:85%;"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 
+  Card - Works
+-->
+  <div class="card-inner" id="works-card">
+    <div class="row card-container">
+
+      <!--
+      Card Wrap
+    -->
+      <div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar>
+
+        <!-- Work Image -->
+        <div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6" style="background-image: url(assets/images/profile3.jpg);"></div>
+
+        <!--
+        Inner Top
+      -->
+        <div class="content inner-top">
+          <div class="row">
+            <div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12">
+              <div class="title-bg">Portfolio</div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        Works
+      -->
+        <div class="content works">
+          <div class="row">
+            <div class="col col-m-12 col-t-5 col-d-5 col-d-lg-5">
+
+              <!-- title -->
+              <div class="title"><span>My</span> Portfolio</div>
+
+            </div>
+            <div class="col col-m-12 col-t-7 col-d-7 col-d-lg-7">
+
+              <!-- filters -->
+              <!-- <div class="filter-menu filter-button-group">
+                <div class="f_btn active">
+                  <label><input type="radio" name="fl_radio" value="grid-item" />All</label>
+                </div>
+                <div class="f_btn">
+                  <label><input type="radio" name="fl_radio" value="photo" />Photo</label>
+                </div>
+                <div class="f_btn">
+                  <label><input type="radio" name="fl_radio" value="video" />Video</label>
+                </div>
+                <div class="f_btn">
+                  <label><input type="radio" name="fl_radio" value="music" />Music</label>
+                </div>
+                <div class="f_btn">
+                  <label><input type="radio" name="fl_radio" value="design" />Design</label>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+
+          <!-- work items -->
+          <div class="row grid-items">
+
+            <!-- work items -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item music">
+              <div class="box-item card-box">
+                <div class="image">
+                  <a href="http://vodafone.de/meinvodafone/services/" target="_blank">
+                    <img src="assets/images/works/work9.png" alt="" />
+                    <span class="info">
+                      <span class="icon la la-chain"></span>
+                    </span>
+                  </a>
+                </div>
+                <div class="desc">
+                  <a href="http://vodafone.de/meinvodafone/services/" class="name has-popup">MeinVodafone Germany Account</a>
+                  <div class="category">Website</div>
+                </div>
+              </div>
+            </div>
+            <!-- work items -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item music">
+              <div class="box-item card-box">
+                <div class="image">
+                  <a href="http://businesswatersolution.com/" target="_blank">
+                    <img src="assets/images/works/BWS.png" alt="" />
+                    <span class="info">
+                      <span class="icon la la-chain"></span>
+                    </span>
+                  </a>
+                </div>
+                <div class="desc">
+                  <a href="http://businesswatersolution.com/" class="name has-popup">Business Water Solutions</a>
+                  <div class="category">Website</div>
+                </div>
+              </div>
+            </div>
+            <!-- work items -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item music">
+              <div class="box-item card-box">
+                <div class="image">
+                  <a href="http://gariyagari.com" target="_blank">
+                    <img src="assets/images/works/work1.jpg" alt="" />
+                    <span class="info">
+                      <span class="icon la la-chain"></span>
+                    </span>
+                  </a>
+                </div>
+                <div class="desc">
+                  <a href="#" class="name has-popup">Gary ya Gary</a>
+                  <div class="category">Website</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- work items -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item music">
+              <div class="box-item card-box">
+                <div class="image">
+                  <a href="http://flashtour.travel/" target="_blank">
+                    <img src="assets/images/works/work2.jpg" alt="" />
+                    <span class="info">
+                      <span class="icon la la-chain"></span>
+                    </span>
+                  </a>
+                </div>
+                <div class="desc">
+                  <a href="#" class="name has-popup">Flash Tour</a>
+                  <div class="category">Website</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- work items -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item music">
+              <div class="box-item card-box">
+                <div class="image">
+                  <a href="http://esm3ona.org/" target="_blank">
+                    <img src="assets/images/works/work3.jpg" alt="" />
+                    <span class="info">
+                      <span class="icon la la-chain"></span>
+                    </span>
+                  </a>
+                </div>
+                <div class="desc">
+                  <a href="#" class="name has-popup">Esm3ona</a>
+                  <div class="category">Website</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- work items -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6 grid-item music">
+              <div class="box-item card-box">
+                <div class="image">
+                  <a href="https://www.tra.gov.ae/en/home.aspx" target="_blank">
+                    <img src="assets/images/works/work4.jpg" alt="" />
+                    <span class="info">
+                      <span class="icon la la-chain"></span>
+                    </span>
+                  </a>
+                </div>
+                <div class="desc">
+                  <a href="#" class="name has-popup">TRA</a>
+                  <div class="category">Website</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 
+  Card - Blog
+-->
+
+
+  <!-- 
+  Card - Contacts
+-->
+  <div class="card-inner" id="contacts-card">
+    <div class="row card-container">
+
+      <!--
+      Card Wrap
+    -->
+      <div class="card-wrap col col-m-12 col-t-12 col-d-8 col-d-lg-6" data-simplebar>
+
+        <!-- Map -->
+        <div class="card-image col col-m-12 col-t-12 col-d-4 col-d-lg-6">
+          <div class="map" id="map"></div>
+        </div>
+
+        <!--
+        Inner Top
+      -->
+        <div class="content inner-top">
+          <div class="row">
+            <div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12">
+              <div class="title-bg">Contacts</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
+        Contacts Info
+      -->
+        <div class="content contacts-info">
+          <div class="row">
+            <div class="col col-m-12 col-t-12 col-d-12 col-d-lg-12">
+
+              <!-- title -->
+              <div class="title"><span>Get</span> in Touch</div>
+
+            </div>
+          </div>
+
+          <!-- contacts items -->
+          <div class="row contacts-items">
+
+            <!-- contacts item -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+              <div class="contacts-item card-box">
+                <div class="icon"><i class="la la-map-marker"></i></div>
+                <div class="name">Address</div>
+                <p>
+                  Egypt, Cairo.
+                </p>
+              </div>
+            </div>
+
+            <!-- contacts item -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+              <div class="contacts-item card-box">
+                <div class="icon"><i class="la la-at"></i></div>
+                <div class="name">Email</div>
+                <p style="font-size: 12.5px;">
+                  <a href="mailto:kareem.moh.khalil@gmail.com" target="_top">kareem.moh.khalil@gmail.com</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- contacts item -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+              <div class="contacts-item card-box">
+                <div class="icon"><i class="la la-phone"></i></div>
+                <div class="name">Phone</div>
+                <p>
+                  (+2) 010 077 69096
+                </p>
+              </div>
+            </div>
+
+            <!-- contacts item -->
+            <div class="col col-m-12 col-t-6 col-d-6 col-d-lg-6">
+              <div class="contacts-item card-box">
+                <div class="icon"><i class="la la-check-square"></i></div>
+                <div class="name">Freelance</div>
+                <p>
+                  Available
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!--
+        Contacts Form
+      -->
+        <app-send-email></app-send-email>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 
+  Lines Grid
+-->
+  <div class="lines-grid">
+    <div class="row">
+      <div class="col col-m-12 col-t-6 col-d-4 col-d-lg-3"></div>
+      <div class="col col-m-12 col-t-6 col-d-4 col-d-lg-3">
+        <div class="lines">
+          <div class="line-1"></div>
+          <div class="line-2" style="animation-delay: 10s;"></div>
+        </div>
+      </div>
+      <div class="col col-m-12 col-t-6 col-d-4 col-d-lg-3">
+        <div class="lines">
+          <div class="line-1"></div>
+        </div>
+      </div>
+      <div class="col col-m-0 col-t-0 col-d-0 col-d-lg-3">
+        <div class="lines">
+          <div class="line-1"></div>
+          <div class="line-2" style="animation-delay: 0s;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
